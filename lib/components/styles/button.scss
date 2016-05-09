@@ -1,0 +1,11 @@
+@import "./common.scss";
+
+button.calc-button {
+  @extend .medium-text;
+  border: none;
+  background-color: $darkGray;
+  color: $offWhite;
+
+  width: 60px;
+  height: 60px;
+}
