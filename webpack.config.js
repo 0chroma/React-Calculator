@@ -1,3 +1,5 @@
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
   entry: './index',
   output: {
@@ -13,6 +15,13 @@ module.exports = {
           presets: ['es2015', 'react']
         }
       },
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('style', 'css!sass')
+      }
     ]
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin('styles-bundle.css')
+  ]
 };

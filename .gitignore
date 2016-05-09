@@ -1,5 +1,7 @@
 node_modules/
 browser-bundle.js
 browser-bundle.js.map
+styles-bundle.css
+styles-bundle.css.map
 *.swp
 *.swo
