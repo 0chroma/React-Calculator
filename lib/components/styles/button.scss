@@ -6,6 +6,6 @@ button.calc-button {
   background-color: $darkGray;
   color: $offWhite;
 
-  width: 60px;
-  height: 60px;
+  width: $gridSquareSize;
+  height: $gridSquareSize;
 }

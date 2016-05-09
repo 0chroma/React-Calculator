@@ -1,0 +1,10 @@
+@import "./common.scss";
+
+.calc-display {
+  @extend .large-text;
+
+  width: $gridSquareSize * 4;
+  padding: 20px 0;
+
+  text-align: right;
+}
