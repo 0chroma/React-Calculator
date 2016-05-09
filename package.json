@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --progress --colors --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/index.js | node_modules/.bin/tap-spec"
   },
   "author": "",
   "license": "No License",
@@ -23,6 +23,8 @@
     "node-sass": "^3.7.0",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1",
     "webpack": "^1.12.9"
   }
 }
