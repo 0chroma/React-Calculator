@@ -75,6 +75,19 @@ test('decimal points (rhs)', function(t) {
   t.end();
 });
 
+test('decimal points (ignores multiple for one number)', function(t) {
+  t.plan(2);
+  var fsm = Fsm.create();
+  for(let command of [2, '.', 2, '.', 2]) {
+    var {state: fsm, output} = Fsm.pushCommand(fsm, command);
+  }
+  t.equal(output, '2.22');
+  for(let command of ['+', 3, '.', 1, '.', 4]) {
+    var {state: fsm, output} = Fsm.pushCommand(fsm, command);
+  }
+  t.equal(output, '2.22+3.14');
+});
+
 test('del commands', function(t) {
   t.plan(7);
   var fsm = Fsm.create();
