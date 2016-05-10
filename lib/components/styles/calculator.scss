@@ -4,3 +4,10 @@
   width: $gridSquareSize * 4;
   border: 1px solid $darkGray;
 }
+
+.calc-spacer {
+  width: $gridSquareSize * 3;
+  height: $gridSquareSize;
+  background-color: $darkGray;
+  float: left;
+}
