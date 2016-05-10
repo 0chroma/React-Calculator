@@ -3,12 +3,12 @@
 .calc-display {
   @extend .large-text;
 
-  width: $gridSquareSize * 4;
-  padding: 20px 0;
+  width: ($gridSquareSize * 4) - 20px;
+  padding: 10px 10px;
   min-height: 1.25em;
   overflow: auto;
 
-  background: white;
+  background: $offWhite;
 
   text-align: right;
 }
