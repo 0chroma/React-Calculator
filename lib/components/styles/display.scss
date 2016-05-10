@@ -11,4 +11,9 @@
   background: $offWhite;
 
   text-align: right;
+
+  position: relative;
+  box-shadow: 0 1px 10px 2px $shadow;
+  //z-index: 20;
+
 }
