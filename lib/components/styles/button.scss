@@ -9,3 +9,7 @@ button.calc-button {
   width: $gridSquareSize;
   height: $gridSquareSize;
 }
+
+button.calc-button.side {
+  background: $lightGray;
+}

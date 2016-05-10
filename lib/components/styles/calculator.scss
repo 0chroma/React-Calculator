@@ -2,7 +2,10 @@
 
 .calc {
   width: $gridSquareSize * 4;
-  border: 1px solid $darkGray;
+  //border: 1px solid $darkGray;
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
 }
 
 .calc-spacer {
